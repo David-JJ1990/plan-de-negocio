@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plantilla Perfecta para Ti</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav>
+        <div class="logo-container">
+            <img src="img/logo 3.jpg" alt="La Plantilla Perfecta para Ti" class="logo">
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header id="inicio">
+        <div class="texto-header">
+            <h2>Excelencia en Plantillas Personalizadas</h2>
+            <p>Simplificá tu trabajo, automatizá tus tareas y gestioná tus datos con plantillas diseñadas especialmente para vos.</p>
+            <a href="#contacto" class="boton-header">Solicitá la tuya</a>
+        </div>
+        <div class="imagen-header">
+            <img src="img/01-Excel-Web.png" alt="Persona trabajando con Excel">
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="contenedor-servicios">
+            <div class="servicio">
+                <img src="img/diseño.png" alt="Diseño de plantillas" class="icono-servicio">
+                <h3>Diseño de Plantillas</h3>
+                <p>Diseñamos plantillas a medida con una estructura clara, moderna y fácil de usar.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="img/automatizacion.png" alt="Automatización en Excel" class="icono-servicio">
+                <h3>Automatización</h3>
+                <p>Agregamos macros y fórmulas inteligentes para ahorrar tiempo y evitar errores.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="img/analisis.png" alt="Análisis de datos" class="icono-servicio">
+                <h3>Análisis de Datos</h3>
+                <p>Transformamos tus datos en informes y gráficos interactivos listos para presentar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+        <h2>Ejemplos de Plantillas</h2>
+        <div class="galeria-imagenes">
+            <img src="img/dash.png" alt="Dashboard en Excel">
+            <img src="img/factura.png" alt="Plantilla de Facturación">
+            <img src="img/stock.png" alt="Plantilla de Inventario">
+            <img src="img/asistencia.png" alt="Plantilla de Asistencia">
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Querés una plantilla personalizada o necesitás ayuda con tu proyecto?</p>
+        <form action="procesar_formulario.php" method="post">
+            <label>Nombre:
+                <input type="text" name="nombre" required>
+            </label>
+            <label>Email:
+                <input type="email" name="email" required>
+            </label>
+            <label>Mensaje:
+                <textarea name="mensaje" rows="5" required></textarea>
+            </label>
+            <button type="submit">Enviar Consulta</button>
+        </form>
+    </section>
+
+    <!-- Redes -->
+    <aside>
+        <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="img/dribbble-icon.png" alt="Dribbble"></a>
+        <a href="#"><img src="img/linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="anio"></span> La Plantilla Perfecta para Ti | contacto@plantillasexcel.com</p>
+    </footer>
+
+    <button id="btn-arriba" title="Volver arriba">↑</button>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

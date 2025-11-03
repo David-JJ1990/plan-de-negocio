@@ -1,0 +1,323 @@
+/* ---------- Fuentes ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* ---------- Navegación ---------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #217346; /* Verde Excel */
+    padding: 10px 50px;
+}
+
+nav h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+    height: 150px; /* Más grande */
+    width: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #bde5bd;
+}
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background-color: #f7f7f7;
+    flex-wrap: wrap;
+}
+
+.texto-header {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto-header h2 {
+    font-size: 2.5rem;
+    color: #217346;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.boton-header {
+    background-color: #217346;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-header:hover {
+    background-color: #1a5e38;
+}
+
+.imagen-header img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ---------- Servicios ---------- */
+#servicios {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#servicios h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #217346;
+    margin-bottom: 40px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    width: 300px;
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.icono-servicio {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* ---------- Galería ---------- */
+#galeria {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#galeria h2 {
+    color: #217346;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.galeria-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.galeria-imagenes img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Contacto ---------- */
+#contacto {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #217346;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #217346;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a5e38;
+}
+
+/* ---------- Redes ---------- */
+aside {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+aside img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+aside img:hover {
+    transform: scale(1.2);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #217346;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ---------- Animaciones ---------- */
+#servicios .servicio,
+#galeria img {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+#servicios .servicio.visible,
+#galeria img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Botón “Volver arriba” ---------- */
+#btn-arriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #217346;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+#btn-arriba:hover {
+    background-color: #1a5e38;
+    transform: scale(1.1);
+}
+
+/* ---------- Responsividad ---------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .imagen-header img {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria-imagenes img {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        height: 70px;
+    }
+}
