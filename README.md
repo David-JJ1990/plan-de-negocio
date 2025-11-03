@@ -1,4 +1,4 @@
-# plan-de-negocio
+# Plan-de-Negocio
 La Plantilla Perfecta para Ti
 # 🌿 La Plantilla Perfecta para Ti
 
